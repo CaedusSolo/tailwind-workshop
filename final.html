@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" class="light"> <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ying Tong | Software Engineer</title>
+  
+  <link href="./dist/output.css" rel="stylesheet">
+  
+  </head>
+<body class="bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-50 transition-colors duration-300 font-sans antialiased">
+
+  <nav class="max-w-5xl mx-auto px-6 py-8 flex justify-between items-center">
+    <div class="font-bold text-xl tracking-tight">
+      YingTong<span class="text-blue-600 dark:text-blue-400">.</span>
+    </div>
+    
+    <div class="flex items-center gap-6">
+      <ul class="hidden sm:flex space-x-6 text-sm font-medium text-zinc-600 dark:text-zinc-400">
+        <li><a href="#about" class="hover:text-zinc-900 dark:hover:text-white transition-colors">About</a></li>
+        <li><a href="#projects" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Projects</a></li>
+      </ul>
+      
+      <button id="theme-toggle" class="p-2 rounded-md bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-300 dark:hover:bg-zinc-700 transition-colors" aria-label="Toggle Dark Mode">
+        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4.22 3.22a1 1 0 011.415 0l.708.708a1 1 0 01-1.414 1.414l-.708-.708a1 1 0 010-1.414zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM15.22 16.22a1 1 0 01-1.415-1.414l.708-.708a1 1 0 011.414 1.414l-.708.708zM10 18a1 1 0 01-1-1v-1a1 1 0 112 0v1a1 1 0 01-1 1zm-4.22-1.22a1 1 0 01-1.415 0l-.708-.708a1 1 0 011.414-1.414l.708.708a1 1 0 010 1.414zM2 10a1 1 0 011-1h1a1 1 0 110 2H3a1 1 0 01-1-1zm1.22-5.22a1 1 0 011.415 1.414l-.708.708a1 1 0 01-1.414-1.414l.708-.708zM10 5a5 5 0 100 10 5 5 0 000-10z"></path></svg>
+        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+      </button>
+    </div>
+  </nav>
+
+  <header class="max-w-5xl mx-auto px-6 py-20 md:py-32">
+    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+      Building robust backends <br class="hidden md:block">
+      <span class="text-zinc-500 dark:text-zinc-400">and scalable APIs.</span>
+    </h1>
+    <p class="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl mb-10 leading-relaxed">
+      I'm a software engineer specializing in enterprise systems, fintech applications, and optimized development environments. Focused on writing clean, maintainable code.
+    </p>
+    <div class="flex gap-4">
+      <a href="#" class="px-6 py-3 bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 font-medium rounded-lg hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors">
+        View GitHub
+      </a>
+      <a href="#" class="px-6 py-3 bg-white text-zinc-900 dark:bg-zinc-900 dark:text-white font-medium rounded-lg border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors">
+        Contact Me
+      </a>
+    </div>
+  </header>
+
+  <section id="projects" class="max-w-5xl mx-auto px-6 py-16 border-t border-zinc-200 dark:border-zinc-800/50">
+    <h2 class="text-2xl font-bold mb-8">Selected Projects</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <div class="p-6 bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:border-blue-500 dark:hover:border-blue-500 transition-colors">
+        <h3 class="text-lg font-semibold mb-2">P2P Fund Transfer API</h3>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400 mb-6 leading-relaxed">
+          A highly concurrent, secure microservice designed for peer-to-peer financial transactions. Built with a focus on ACID compliance and transaction safety for fintech environments.
+        </p>
+        <div class="flex flex-wrap gap-2 text-xs font-medium">
+          <span class="px-2 py-1 bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 rounded-md">Java</span>
+          <span class="px-2 py-1 bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 rounded-md">Spring Boot</span>
+        </div>
+      </div>
+
+      <div class="p-6 bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:border-blue-500 dark:hover:border-blue-500 transition-colors">
+        <h3 class="text-lg font-semibold mb-2">ProPro Management</h3>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400 mb-6 leading-relaxed">
+          An organizational interface for managing university club workflows, student data, and lecturer approvals. Includes complex database schemas and permission logic.
+        </p>
+        <div class="flex flex-wrap gap-2 text-xs font-medium">
+          <span class="px-2 py-1 bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 rounded-md">Ruby on Rails</span>
+          <span class="px-2 py-1 bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 rounded-md">PostgreSQL</span>
+        </div>
+      </div>
+
+      <div class="p-6 bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:border-blue-500 dark:hover:border-blue-500 transition-colors md:col-span-2">
+        <h3 class="text-lg font-semibold mb-2">WSL Dev Environment Setup</h3>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400 mb-6 leading-relaxed max-w-2xl">
+          A meticulously crafted dotfiles repository focused on bridging Windows Subsystem for Linux with high-performance tooling. Features advanced Neovim IDE configurations, JDTLS integration, and IdeaVim synchronization.
+        </p>
+        <div class="flex flex-wrap gap-2 text-xs font-medium">
+          <span class="px-2 py-1 bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 rounded-md">Lua</span>
+          <span class="px-2 py-1 bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 rounded-md">Bash</span>
+          <span class="px-2 py-1 bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 rounded-md">Neovim</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="max-w-5xl mx-auto px-6 py-8 mt-12 border-t border-zinc-200 dark:border-zinc-800/50 flex flex-col sm:flex-row justify-between items-center text-sm text-zinc-500">
+    <p>© 2026 Ying Tong. Built with Tailwind CSS.</p>
+    <div class="flex gap-4 mt-4 sm:mt-0">
+      <a href="#" class="hover:text-zinc-900 dark:hover:text-white transition-colors">LinkedIn</a>
+      <a href="#" class="hover:text-zinc-900 dark:hover:text-white transition-colors">GitHub</a>
+    </div>
+  </footer>
+
+  <script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const darkIcon = document.getElementById('theme-toggle-dark-icon');
+    const lightIcon = document.getElementById('theme-toggle-light-icon');
+    const htmlTag = document.documentElement;
+
+    // Check initial state
+    if (htmlTag.classList.contains('dark')) {
+      lightIcon.classList.remove('hidden');
+    } else {
+      darkIcon.classList.remove('hidden');
+    }
+
+    // Toggle theme on click
+    themeToggleBtn.addEventListener('click', () => {
+      htmlTag.classList.toggle('dark');
+      darkIcon.classList.toggle('hidden');
+      lightIcon.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
